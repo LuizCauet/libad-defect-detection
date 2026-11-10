@@ -1,0 +1,306 @@
+{
+  "image_files": 2976,
+  "uncompressed_bytes": 7802179200,
+  "counts_by_category_and_label": {
+    "10_streak/anomaly": 140,
+    "10_streak/normal": 132,
+    "11_pinhole/anomaly": 212,
+    "11_pinhole/normal": 64,
+    "1_wrinkling/anomaly": 152,
+    "1_wrinkling/normal": 152,
+    "2_particle/anomaly": 136,
+    "2_particle/normal": 124,
+    "3_pit/anomaly": 148,
+    "3_pit/normal": 140,
+    "4_unevenness/anomaly": 124,
+    "4_unevenness/normal": 136,
+    "5_barefoil/anomaly": 120,
+    "5_barefoil/normal": 120,
+    "6_scratch/anomaly": 140,
+    "6_scratch/normal": 148,
+    "7_polarity/anomaly": 140,
+    "7_polarity/normal": 136,
+    "8_debonding/anomaly": 80,
+    "8_debonding/normal": 152,
+    "9_crack/anomaly": 140,
+    "9_crack/normal": 140
+  },
+  "example_image_headers": [
+    {
+      "path": "LIBAD/10_streak/anomaly/T01A.tiff",
+      "size": [
+        1024,
+        1280
+      ],
+      "mode": "L",
+      "bits_per_sample": [
+        8
+      ]
+    },
+    {
+      "path": "LIBAD/10_streak/anomaly/T01B.tiff",
+      "size": [
+        1024,
+        1280
+      ],
+      "mode": "L",
+      "bits_per_sample": [
+        8
+      ]
+    },
+    {
+      "path": "LIBAD/10_streak/anomaly/T01L.tiff",
+      "size": [
+        1024,
+        1280
+      ],
+      "mode": "F",
+      "bits_per_sample": [
+        32
+      ]
+    },
+    {
+      "path": "LIBAD/10_streak/anomaly/T01X.tiff",
+      "size": [
+        1024,
+        1280
+      ],
+      "mode": "I;16",
+      "bits_per_sample": [
+        16
+      ]
+    }
+  ],
+  "splits": [
+    {
+      "file": "splits/LIBAD_normal70base_val15normal_seed1245.csv",
+      "rows": 744,
+      "duplicate_sample_keys": 0,
+      "missing_modality_files": [],
+      "counts": {
+        "test/anomaly": 383,
+        "test/normal": 109,
+        "train/normal": 197,
+        "val/normal": 55
+      }
+    },
+    {
+      "file": "splits/LIBAD_normal70base_val15normal_seed347.csv",
+      "rows": 744,
+      "duplicate_sample_keys": 0,
+      "missing_modality_files": [],
+      "counts": {
+        "test/anomaly": 383,
+        "test/normal": 109,
+        "train/normal": 197,
+        "val/normal": 55
+      }
+    },
+    {
+      "file": "splits/LIBAD_normal70base_val15normal_seed4012.csv",
+      "rows": 744,
+      "duplicate_sample_keys": 0,
+      "missing_modality_files": [],
+      "counts": {
+        "test/anomaly": 383,
+        "test/normal": 109,
+        "train/normal": 197,
+        "val/normal": 55
+      }
+    },
+    {
+      "file": "splits/LIBAD_normal70base_val15normal_seed4589.csv",
+      "rows": 744,
+      "duplicate_sample_keys": 0,
+      "missing_modality_files": [],
+      "counts": {
+        "test/anomaly": 383,
+        "test/normal": 109,
+        "train/normal": 197,
+        "val/normal": 55
+      }
+    },
+    {
+      "file": "splits/LIBAD_normal70base_val15normal_seed5021.csv",
+      "rows": 744,
+      "duplicate_sample_keys": 0,
+      "missing_modality_files": [],
+      "counts": {
+        "test/anomaly": 383,
+        "test/normal": 109,
+        "train/normal": 197,
+        "val/normal": 55
+      }
+    },
+    {
+      "file": "splits/LIBAD_normal70base_val15normal_seed5678.csv",
+      "rows": 744,
+      "duplicate_sample_keys": 0,
+      "missing_modality_files": [],
+      "counts": {
+        "test/anomaly": 383,
+        "test/normal": 109,
+        "train/normal": 197,
+        "val/normal": 55
+      }
+    },
+    {
+      "file": "splits/LIBAD_normal70base_val15normal_seed6234.csv",
+      "rows": 744,
+      "duplicate_sample_keys": 0,
+      "missing_modality_files": [],
+      "counts": {
+        "test/anomaly": 383,
+        "test/normal": 109,
+        "train/normal": 197,
+        "val/normal": 55
+      }
+    },
+    {
+      "file": "splits/LIBAD_normal70base_val15normal_seed6789.csv",
+      "rows": 744,
+      "duplicate_sample_keys": 0,
+      "missing_modality_files": [],
+      "counts": {
+        "test/anomaly": 383,
+        "test/normal": 109,
+        "train/normal": 197,
+        "val/normal": 55
+      }
+    },
+    {
+      "file": "splits/LIBAD_normal70base_val15normal_seed725.csv",
+      "rows": 744,
+      "duplicate_sample_keys": 0,
+      "missing_modality_files": [],
+      "counts": {
+        "test/anomaly": 383,
+        "test/normal": 109,
+        "train/normal": 197,
+        "val/normal": 55
+      }
+    },
+    {
+      "file": "splits/LIBAD_normal70base_val15normal_seed7345.csv",
+      "rows": 744,
+      "duplicate_sample_keys": 0,
+      "missing_modality_files": [],
+      "counts": {
+        "test/anomaly": 383,
+        "test/normal": 109,
+        "train/normal": 197,
+        "val/normal": 55
+      }
+    },
+    {
+      "file": "splits/LIBAD_normal70train_noval_seed1245.csv",
+      "rows": 744,
+      "duplicate_sample_keys": 0,
+      "missing_modality_files": [],
+      "counts": {
+        "test/anomaly": 383,
+        "test/normal": 109,
+        "train/normal": 252
+      }
+    },
+    {
+      "file": "splits/LIBAD_normal70train_noval_seed347.csv",
+      "rows": 744,
+      "duplicate_sample_keys": 0,
+      "missing_modality_files": [],
+      "counts": {
+        "test/anomaly": 383,
+        "test/normal": 109,
+        "train/normal": 252
+      }
+    },
+    {
+      "file": "splits/LIBAD_normal70train_noval_seed4012.csv",
+      "rows": 744,
+      "duplicate_sample_keys": 0,
+      "missing_modality_files": [],
+      "counts": {
+        "test/anomaly": 383,
+        "test/normal": 109,
+        "train/normal": 252
+      }
+    },
+    {
+      "file": "splits/LIBAD_normal70train_noval_seed4589.csv",
+      "rows": 744,
+      "duplicate_sample_keys": 0,
+      "missing_modality_files": [],
+      "counts": {
+        "test/anomaly": 383,
+        "test/normal": 109,
+        "train/normal": 252
+      }
+    },
+    {
+      "file": "splits/LIBAD_normal70train_noval_seed5021.csv",
+      "rows": 744,
+      "duplicate_sample_keys": 0,
+      "missing_modality_files": [],
+      "counts": {
+        "test/anomaly": 383,
+        "test/normal": 109,
+        "train/normal": 252
+      }
+    },
+    {
+      "file": "splits/LIBAD_normal70train_noval_seed5678.csv",
+      "rows": 744,
+      "duplicate_sample_keys": 0,
+      "missing_modality_files": [],
+      "counts": {
+        "test/anomaly": 383,
+        "test/normal": 109,
+        "train/normal": 252
+      }
+    },
+    {
+      "file": "splits/LIBAD_normal70train_noval_seed6234.csv",
+      "rows": 744,
+      "duplicate_sample_keys": 0,
+      "missing_modality_files": [],
+      "counts": {
+        "test/anomaly": 383,
+        "test/normal": 109,
+        "train/normal": 252
+      }
+    },
+    {
+      "file": "splits/LIBAD_normal70train_noval_seed6789.csv",
+      "rows": 744,
+      "duplicate_sample_keys": 0,
+      "missing_modality_files": [],
+      "counts": {
+        "test/anomaly": 383,
+        "test/normal": 109,
+        "train/normal": 252
+      }
+    },
+    {
+      "file": "splits/LIBAD_normal70train_noval_seed725.csv",
+      "rows": 744,
+      "duplicate_sample_keys": 0,
+      "missing_modality_files": [],
+      "counts": {
+        "test/anomaly": 383,
+        "test/normal": 109,
+        "train/normal": 252
+      }
+    },
+    {
+      "file": "splits/LIBAD_normal70train_noval_seed7345.csv",
+      "rows": 744,
+      "duplicate_sample_keys": 0,
+      "missing_modality_files": [],
+      "counts": {
+        "test/anomaly": 383,
+        "test/normal": 109,
+        "train/normal": 252
+      }
+    }
+  ]
+}

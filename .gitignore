@@ -1,0 +1,23 @@
+*.zip
+data/
+.venv/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+mlruns/
+mlflow.db
+mlartifacts/
+artifacts/
+.cache/
+third_party/
+.plans/
+work/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.idea/
+.vscode/
+
+# Generated montages contain samples from the gated LIBAD dataset.
+reports/*polarity*.png

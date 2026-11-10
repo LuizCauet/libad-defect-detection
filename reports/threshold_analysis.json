@@ -1,0 +1,14 @@
+{
+  "source": "artifacts\\patchcore_vis_all_seed7345\\raw_scores_vis_coreset_0p05_LIBAD_normal70train_noval_seed7345.csv",
+  "sha256": "299e07c2fa0ec99d0be946320ea4a500c8c5ae74ef50edb289140f7a6f573519",
+  "comparison": "image_score >= threshold",
+  "samples": 492,
+  "normal": 109,
+  "anomaly": 383,
+  "image_auroc": 0.849066998826263,
+  "average_precision": 0.9534652795838088,
+  "fpr95": 0.7064220183486238,
+  "threshold95": 10.465415000915527,
+  "recall_at_threshold95": 0.9556135770234987,
+  "reference_revision": "8f98f2ebde63cd45660e58d6413f5ccd638966f4"
+}

@@ -1,0 +1,24 @@
+{
+  "channel_order": [
+    "side_a",
+    "side_b"
+  ],
+  "input_scaling": "uint8 divided by 255.0",
+  "manifest": "manifests/visible_binary_split_v1.csv",
+  "manifest_sha256": "0aa49f62be4d526c18bb35c971bc8febc909cac0253ed9ef4479db4e8053fcf7",
+  "mean": [
+    0.2565615444142854,
+    0.24381599153761757
+  ],
+  "normalization_version": "visible_binary_normalization_v1",
+  "pixels_per_channel": 146145280,
+  "resize_height": 640,
+  "resize_width": 512,
+  "source_split": "train",
+  "std": [
+    0.1729388936891529,
+    0.17400935518635863
+  ],
+  "training_samples": 446,
+  "variance_definition": "population variance over all resized training pixels"
+}

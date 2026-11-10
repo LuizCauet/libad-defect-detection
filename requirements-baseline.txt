@@ -1,0 +1,13 @@
+# Install torch/torchvision separately from the CUDA 12.6 wheel index.
+torch==2.7.1
+torchvision==0.22.1
+transformers>=4.56,<5
+numpy
+pandas
+scipy
+scikit-learn
+tifffile
+pillow
+tqdm
+tabulate
+matplotlib

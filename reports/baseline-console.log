@@ -1,0 +1,145 @@
+
+================================================================================
+Running file: D:\src\Defect Detection\third_party\LIBAD\run.py
+use_cfr: False
+use_feature_mapping: False
+use_fusion_bank: False
+modality: vis
+================================================================================
+
+Coreset ratios to evaluate: [0.05]
+[NORMAL] loaded 361 samples, total 12 classes
+[ANOMALY] loaded 383 samples, total 12 classes
+[SPLIT TRAIN] loaded 252 samples from D:\src\Defect Detection\data\splits\LIBAD_normal70train_noval_seed7345.csv
+Category filter: 1_wrinkling; train=27
+[NORMAL] loaded 361 samples, total 12 classes
+[ANOMALY] loaded 383 samples, total 12 classes
+[SPLIT TEST] loaded 492 samples from D:\src\Defect Detection\data\splits\LIBAD_normal70train_noval_seed7345.csv
+Category filter: 1_wrinkling; test=49
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+
+Extracting normal vis features:   0%|          | 0/27 [00:00<?, ?it/s]
+Extracting normal vis features:  30%|##9       | 8/27 [00:02<00:05,  3.76it/s]
+Extracting normal vis features:  63%|######2   | 17/27 [00:04<00:02,  3.89it/s]
+Extracting normal vis features:  93%|#########2| 25/27 [00:06<00:00,  3.67it/s]
+Extracting normal vis features: 100%|##########| 27/27 [00:07<00:00,  3.72it/s]
+Setting coreset ratio 0.05: 87480 -> 4374
+Fitting random projection. Start dim = (87480, 384)
+Random projection done. Projected dim = (87480, 280)
+Extending coreset: 1 -> 4374
+
+Extending coreset:   0%|          | 0/4373 [00:00<?, ?it/s]
+Extending coreset:  12%|#1        | 513/4373 [00:02<00:15, 256.31it/s]
+Extending coreset:  23%|##3       | 1027/4373 [00:04<00:13, 256.52it/s]
+Extending coreset:  35%|###5      | 1543/4373 [00:06<00:11, 257.11it/s]
+Extending coreset:  47%|####7     | 2058/4373 [00:08<00:09, 256.66it/s]
+Extending coreset:  59%|#####8    | 2572/4373 [00:10<00:07, 256.60it/s]
+Extending coreset:  71%|#######   | 3090/4373 [00:12<00:04, 257.37it/s]
+Extending coreset:  82%|########2 | 3605/4373 [00:14<00:02, 257.20it/s]
+Extending coreset:  94%|#########4| 4120/4373 [00:16<00:00, 256.38it/s]
+Extending coreset: 100%|##########| 4373/4373 [00:17<00:00, 256.73it/s]
+Active memory bank: (4374, 384)
+Memory bank fitted: (4374, 384)
+Memory bank cached on cuda:0: (4374, 384)
+
+================================================================================
+Switching active coreset ratio to 0.05
+================================================================================
+Updating bank: vis
+Setting coreset ratio 0.05: 87480 -> 4374
+Active memory bank: (4374, 384)
+Memory bank saved to D:\src\Defect Detection\artifacts\patchcore_vis_wrinkling_seed7345\memory_bank_vis_coreset_0p05_LIBAD_normal70train_noval_seed7345.pt
+
+Could not save font_manager cache [Errno 13] Permission denied: 'C:\\Users\\luizc\\.matplotlib\\fontlist-v3.11.0.json.matplotlib-lock'
+Evaluating vis anomaly scores:   0%|          | 0/49 [00:00<?, ?it/s]
+Evaluating vis anomaly scores:   2%|2         | 1/49 [00:04<03:12,  4.01s/it]
+Evaluating vis anomaly scores:  14%|#4        | 7/49 [00:06<00:32,  1.31it/s]
+Evaluating vis anomaly scores:  27%|##6       | 13/49 [00:08<00:19,  1.83it/s]
+Evaluating vis anomaly scores:  39%|###8      | 19/49 [00:10<00:14,  2.09it/s]
+Evaluating vis anomaly scores:  49%|####8     | 24/49 [00:13<00:11,  2.20it/s]
+Evaluating vis anomaly scores:  61%|######1   | 30/49 [00:15<00:08,  2.30it/s]
+Evaluating vis anomaly scores:  71%|#######1  | 35/49 [00:17<00:06,  2.28it/s]
+Evaluating vis anomaly scores:  82%|########1 | 40/49 [00:19<00:03,  2.28it/s]
+Evaluating vis anomaly scores:  94%|#########3| 46/49 [00:22<00:01,  2.36it/s]
+Evaluating vis anomaly scores: 100%|##########| 49/49 [00:23<00:00,  2.09it/s]
+
+================================================================================
+Test normal image evidence before weighted_sum
+================================================================================
+vis                          min=11.4138 p05=11.4909 p50=13.4769 p95=15.8093 max=16.129 mean=13.4674 std=1.63551
+================================================================================
+
+
+================================================================================
+Test anomaly image evidence before weighted_sum
+================================================================================
+vis                          min=11.0066 p05=11.6112 p50=15.1659 p95=18.8356 max=19.0504 mean=15.1379 std=2.46933
+================================================================================
+
+
+================================================================================
+Test normal final image scores
+================================================================================
+min=11.4138 p05=11.4909 p50=13.4769 p95=15.8093 max=16.129 mean=13.4674 std=1.63551
+================================================================================
+
+
+================================================================================
+Test anomaly final image scores
+================================================================================
+min=11.0066 p05=11.6112 p50=15.1659 p95=18.8356 max=19.0504 mean=15.1379 std=2.46933
+================================================================================
+
+
+================================================================================
+Inference speed
+================================================================================
+Measured samples: 48
+Total inference time: 12.558335 s
+Time per sample: 261.632 ms
+Throughput: 3.822 samples/s
+================================================================================
+
+
+================================================================================
+Experiment finished
+================================================================================
+Task: single-modal anomaly detection
+Modality: vis
+Banks: vis
+Decision fusion: weighted_sum
+Backbone: DINO v2 small, registers=False
+Input size: 640 x 512
+VIS feature mode: independent_sides
+VIS side score combine: max
+Evaluation split: test
+Split file: D:\src\Defect Detection\data\splits\LIBAD_normal70train_noval_seed7345.csv
+SLURM ID:
+Notes: development_wrinkling_dinov2_small_fp32
+
+Main metrics:
+| metric                  |    value |
+|:------------------------|---------:|
+| image_auroc             |   0.6962 |
+| image_aupr              |   0.9029 |
+| image_fpr95             |   1      |
+| image_best_f1           |   0.8736 |
+| image_best_f1_threshold |  11.0066 |
+| image_threshold         |  11.0066 |
+| image_accuracy          |   0.7755 |
+| image_precision         |   0.7755 |
+| image_recall            |   1      |
+| image_f1                |   0.8736 |
+| image_tn                |   0      |
+| image_fp                |  11      |
+| image_fn                |   0      |
+| image_tp                |  38      |
+| pixel_auroc             | nan      |
+| pixel_aupr              | nan      |
+| au_pro                  | nan      |
+| au_pro_001              | nan      |
+================================================================================
+
+Experiment result saved to D:\src\Defect Detection\artifacts\patchcore_vis_wrinkling_seed7345\experiment_log.csv
+Markdown summary saved to D:\src\Defect Detection\artifacts\patchcore_vis_wrinkling_seed7345\experiment_log.md
+Raw scores saved to D:\src\Defect Detection\artifacts\patchcore_vis_wrinkling_seed7345\raw_scores_vis_coreset_0p05_LIBAD_normal70train_noval_seed7345.csv
